@@ -1,0 +1,16 @@
+| Statystyka | Zbiór 100 | Zbiór 10 000 |
+| ---------- | --------- | ------------ |
+| Średnia    | 2.8962    | 2.9988       |
+| Mediana    | 2.8730    | 2.9988       |
+| Odch.Std   | 0.9082    | 1.0037       |
+| Wariancja  | 0.8248    | 1.0075       |
+| Min        | 0.3803    | -0.9224      |
+| Max        | 4.8523    | 6.9262       |
+
+komentarz:
+# zbiór 10 000 są niemal równe (≈ 3), czyli dobrze odwzorowują rzeczywisty rozkład.
+# zbiór 100 średnia i mediana są zauważalnie niższe.
+# zbiór 10 000 wartości są bliższe teoretycznemu odchyleniu 1 i wariancji 1.
+# zbiór 100 ma mniejsze odchylenie i wariancję — większa losowa zmienność.
+# zbiór 10 000 pojawiają się bardziej ekstremalne wartości (np. max = 6.93, min = -0.92).
+# zbiór 100 rozstęp jest mniejszy — mniej wartości odstających.

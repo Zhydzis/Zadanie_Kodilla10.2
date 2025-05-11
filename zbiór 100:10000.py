@@ -1,0 +1,31 @@
+import numpy as np
+
+np.random.seed(42)
+
+data_100 = np.random.normal(loc=3, scale=1, size=100)
+data_10000 = np.random.normal(loc=3, scale=1, size=10000)
+
+stat_100 = {
+    "Średnia": np.mean(data_100),
+    "Mediana": np.median(data_100),
+    "Odch.Std": np.std(data_100, ddof=1),  
+    "Wariancja": np.var(data_100, ddof=1),
+    "Min": np.min(data_100),
+    "Max": np.max(data_100)
+}
+
+stat_10000 = {
+    "Średnia": np.mean(data_10000),
+    "Mediana": np.median(data_10000),
+    "Odch.Std": np.std(data_10000, ddof=1),
+    "Wariancja": np.var(data_10000, ddof=1),
+    "Min": np.min(data_10000),
+    "Max": np.max(data_10000)
+}tabela = pd.DataFrame({
+    "Statystyka": stat_100.keys(),
+    "Zbiór 100": stat_100.values(),
+    "Zbiór 10 000": stat_10000.values()
+})
+
+tabela = tabela.round(4)
+tabela
